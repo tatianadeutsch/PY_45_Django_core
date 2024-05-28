@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from pathlib import Path
+from pythonjsonlogger.jsonlogger import JsonFormatter
+
+from users.middleware import CustomJsonFormatter
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,8 +41,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "debug_toolbar",
     "main",
     "goods",
+    "users",
+    "shopping_cart",
 ]
 
 MIDDLEWARE = [
@@ -50,7 +56,44 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "users.middleware.RequestLoggingMiddleware",
 ]
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "main_format": {
+            "format": "{asctime} - {levelname} - {module} - {filename} - {message}",
+            "style": "{",
+        },
+        "json_formatter": {
+            "()": CustomJsonFormatter,
+        },
+    },
+    "handlers": {
+        "console_handler": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "formatter": "main_format",
+        },
+        "file_handler": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "formatter": "json_formatter",
+            "filename": "sitewatch.log",
+        },
+    },
+    "loggers": {
+        "users.middleware": {
+            "handlers": ["console_handler", "file_handler"],
+            "level": "INFO",
+            "propagate": True,
+        }
+    },
+}
+
 
 ROOT_URLCONF = "sitewatch.urls"
 
@@ -81,7 +124,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "clock",
         "USER": "postgres",
-        "PASSWORD": "******",
+        "PASSWORD": "N051114a",
         "HOST": "localhost",
         "PORT": "5432",
     }
@@ -125,7 +168,16 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
+MEDIA_URL = "media/"
+
+MEDIA_ROOT = BASE_DIR / "media"
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+AUTH_USER_MODEL = "users.User"

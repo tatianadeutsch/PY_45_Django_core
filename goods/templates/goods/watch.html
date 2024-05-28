@@ -1,9 +1,52 @@
-{% extends "main/base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 <body>
 {% block css %}
     <h2>{{ content }}</h2>
     <p>{{ text_on_page }}</p>
+    {% for product in goods %}
+        {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        {% endif %}
+        <p> id: {{ product.display_id }}</p>
+        <p>
+            {% if product.discount %}
+                <p><s>{{ product.price }}</s>
+                <strong>{{ product.sell_price }}</strong></p>
+                <p>Скидка {{ product.discount }}</p>
+            {% else %}
+                <p><strong>{{ product.price }}</strong></p>
+            {% endif %}
+        </p>
+        <p>{{ product.name }}</p>
+        <p>{{ product.description|truncatechars:250 }}</p>
+    {% endfor %}
+<!--Пагинация-->
+    <nav>
+        <ul>
+            <li div="{% if not goods.has_previous %}disabled{% endif %}">
+                <a href="{% if goods.has_previous %}&page={{ goods.previous_page_number }}
+                {% else %}
+                #
+                {% endif %}"
+                >Назад</a>
+            </li>
+
+            {% for page in goods.paginator.page_range %}
+                <li div="{% if goods.number == page %} active {% endif %}">
+                    <a href="?page={{ page }}">{{ page }}</a>
+                </li>
+            {% endfor %}
+
+            <li div="{% if not goods.has_next %} disabled {% endif %}">
+                <a href="{% if goods.has_next %}?page={{ goods.next_page_number }}
+                {% else %}
+                #
+                {% endif %}">Следующая</a>
+            </li>
+
+        </ul>
+    </nav>
 {% endblock %}
 </body>

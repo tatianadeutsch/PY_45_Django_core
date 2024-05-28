@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+<body>
+{% block css %}
+    <img src="{{ product.image.url }}">
+    <p>Цена: <strong>{{ product.sell_price }}</strong></p>
+    <p>id: {{ product.display_id }}</p>
+    <h5>{{ product.name }}</h5>
+    <p>{{ product.description }}</p>
+{% endblock %}
+</body>

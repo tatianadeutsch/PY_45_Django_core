@@ -1,0 +1,110 @@
+2024-05-27 23:34:04,619 - INFO - views - views.py - hello!
+2024-05-28 00:24:56,547 - INFO - middleware - middleware.py - Incoming request: GET /goods/watch/
+2024-05-28 00:24:56,659 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:24:59,161 - INFO - middleware - middleware.py - Incoming request: GET /goods/watch/
+2024-05-28 00:24:59,194 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:01,254 - INFO - middleware - middleware.py - Incoming request: GET /goods/watch/carts/cart.html
+2024-05-28 00:25:01,263 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:05,439 - INFO - middleware - middleware.py - Incoming request: GET /about/
+2024-05-28 00:25:05,469 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:06,374 - INFO - middleware - middleware.py - Incoming request: GET /
+2024-05-28 00:25:06,411 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:10,302 - INFO - middleware - middleware.py - Incoming request: GET /goods/
+2024-05-28 00:25:10,341 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:11,870 - INFO - middleware - middleware.py - Incoming request: GET /
+2024-05-28 00:25:11,907 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:21,683 - INFO - middleware - middleware.py - Incoming request: GET /user/login/
+2024-05-28 00:25:21,708 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:21,750 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/google.svg
+2024-05-28 00:25:21,751 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/facebook.svg
+2024-05-28 00:25:21,758 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/github.svg
+2024-05-28 00:25:21,762 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:21,780 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:21,796 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:29,616 - INFO - middleware - middleware.py - Incoming request: GET /user/login/
+2024-05-28 00:25:29,646 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:29,693 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/google.svg
+2024-05-28 00:25:29,696 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/facebook.svg
+2024-05-28 00:25:29,698 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/github.svg
+2024-05-28 00:25:29,719 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:29,720 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:29,722 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:30,515 - INFO - middleware - middleware.py - Incoming request: GET /user/login/
+2024-05-28 00:25:30,557 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:30,621 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/google.svg
+2024-05-28 00:25:30,623 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/facebook.svg
+2024-05-28 00:25:30,625 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/github.svg
+2024-05-28 00:25:30,642 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:30,651 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:30,652 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:31,338 - INFO - middleware - middleware.py - Incoming request: GET /user/login/
+2024-05-28 00:25:31,368 - INFO - middleware - middleware.py - Outgoing response: 200 OK
+2024-05-28 00:25:31,432 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/google.svg
+2024-05-28 00:25:31,435 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/github.svg
+2024-05-28 00:25:31,437 - INFO - middleware - middleware.py - Incoming request: GET /user/deps/icons/facebook.svg
+2024-05-28 00:25:31,455 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:31,481 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+2024-05-28 00:25:31,529 - INFO - middleware - middleware.py - Outgoing response: 404 Not Found
+
+{"message": "Incoming request: GET /"}
+{"message": "Outgoing response: 200 OK"}
+{"message": "Incoming request: GET /about/"}
+{"message": "Outgoing response: 200 OK"}
+{"message": "Incoming request: GET /about/"}
+{"message": "Outgoing response: 200 OK"}
+{"message": "Incoming request: GET /"}
+{"message": "Outgoing response: 200 OK"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:20:31.250914Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:31.367615Z"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:20:33.760576Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:33.795590Z"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:20:34.531369Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:34.565597Z"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:20:39.013453Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:39.057047Z"}
+{"message": "Incoming request: GET /goods/", "timestamp": "2024-05-28T17:20:40.477592Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:40.527027Z"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:20:41.676889Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:41.709502Z"}
+{"message": "Incoming request: GET /goods/watch/", "timestamp": "2024-05-28T17:20:43.300243Z"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:20:43.349714Z"}
+{"message": "Incoming request: GET /goods/watch/", "timestamp": "2024-05-28T17:26:09.375536Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:26:09.497633Z", "level": "INFO"}
+{"message": "Incoming request: GET /goods/watch/", "timestamp": "2024-05-28T17:26:11.010016Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:26:11.036939Z", "level": "INFO"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:26:12.979005Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:26:13.010489Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:26:13.715734Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:26:13.746386Z", "level": "INFO"}
+{"message": "Incoming request: GET /admin/login/?next=/admin/goods/products/", "timestamp": "2024-05-28T17:26:23.845018Z", "level": "INFO"}
+{"message": "Outgoing response: 302 Found", "timestamp": "2024-05-28T17:26:23.864977Z", "level": "INFO"}
+{"message": "Incoming request: GET /admin/", "timestamp": "2024-05-28T17:26:23.893124Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:26:23.935339Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:28:51.790483Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:28:51.902286Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:28:53.113895Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:28:53.140819Z", "level": "INFO"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:28:54.085743Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:28:54.118743Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:28:54.939930Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:28:54.976227Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:29:14.322843Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:14.353688Z", "level": "INFO"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:29:48.605385Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:48.716031Z", "level": "INFO"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:29:49.777045Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:49.807840Z", "level": "INFO"}
+{"message": "Incoming request: GET /goods/", "timestamp": "2024-05-28T17:29:51.817902Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:51.845893Z", "level": "INFO"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:29:52.546160Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:52.582850Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:29:53.138842Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:53.176369Z", "level": "INFO"}
+{"message": "Incoming request: GET /goods/watch/", "timestamp": "2024-05-28T17:29:54.226980Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:29:54.266614Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:35:53.342014Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:35:53.524794Z", "level": "INFO"}
+{"message": "Incoming request: GET /about/", "timestamp": "2024-05-28T17:35:54.421507Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:35:54.452466Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:35:55.216152Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:35:55.249421Z", "level": "INFO"}

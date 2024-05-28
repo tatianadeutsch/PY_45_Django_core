@@ -25,4 +25,5 @@ app_name = "goods"
 urlpatterns = [
     path("", views.index, name="index"),
     path("watch/", views.watch, name="watch"),
+    # path("product/<id:product_id>/", views.product, name="product"),
 ]
