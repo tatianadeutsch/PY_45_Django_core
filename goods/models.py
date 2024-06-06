@@ -1,5 +1,7 @@
 from django.db import models
 
+from users.models import User
+
 
 class Categories(models.Model):
     name = models.CharField(max_length=150, unique=True, verbose_name="Название")
@@ -38,6 +40,7 @@ class Products(models.Model):
         null=True,
         verbose_name="Категория товаров",
     )
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, verbose_name="")
 
     class Meta:
         verbose_name_plural = "Продукты"

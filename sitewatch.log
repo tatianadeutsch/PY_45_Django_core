@@ -108,3 +108,15 @@
 {"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:35:54.452466Z", "level": "INFO"}
 {"message": "Incoming request: GET /", "timestamp": "2024-05-28T17:35:55.216152Z", "level": "INFO"}
 {"message": "Outgoing response: 200 OK", "timestamp": "2024-05-28T17:35:55.249421Z", "level": "INFO"}
+{"message": "Incoming request: GET /", "timestamp": "2024-05-31T17:07:22.560780Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-31T17:07:25.168341Z", "level": "INFO"}
+{"message": "Incoming request: GET /favicon.ico", "timestamp": "2024-05-31T17:07:36.140019Z", "level": "INFO"}
+{"message": "Outgoing response: 404 Not Found", "timestamp": "2024-05-31T17:07:36.295049Z", "level": "INFO"}
+{"message": "Incoming request: GET /admin", "timestamp": "2024-05-31T17:07:41.820534Z", "level": "INFO"}
+{"message": "Outgoing response: 404 Not Found", "timestamp": "2024-05-31T17:07:41.831480Z", "level": "INFO"}
+{"message": "Incoming request: GET /admin/", "timestamp": "2024-05-31T17:07:42.730795Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-31T17:07:44.177554Z", "level": "INFO"}
+{"message": "Incoming request: GET /admin/goods/products/", "timestamp": "2024-05-31T17:07:55.857892Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-31T17:07:56.637514Z", "level": "INFO"}
+{"message": "Incoming request: GET /admin/jsi18n/", "timestamp": "2024-05-31T17:07:58.823901Z", "level": "INFO"}
+{"message": "Outgoing response: 200 OK", "timestamp": "2024-05-31T17:07:59.173428Z", "level": "INFO"}

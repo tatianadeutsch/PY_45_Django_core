@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 from sitewatch import settings
 from sitewatch.settings import DEBUG
@@ -27,6 +27,10 @@ urlpatterns = [
     path("", include("main.urls", namespace="main")),
     path("goods/", include("goods.urls", namespace="goods")),
     path("user/", include("users.urls", namespace="user")),
+    path("api/v1/", include("drf.urls", namespace="api")),
+    path("api/v1/drf-auth/", include('rest_framework.urls')),#авторизация сессия/куки
+    path("api/v1/auth/", include("djoser.urls")),
+    re_path(r"^auth/", include("djoser.urls.authtoken")),
 ]
 
 if DEBUG:

@@ -15,7 +15,7 @@ class Cart(models.Model):
     product = models.ForeignKey(
         to=Products, on_delete=models.SET_NULL, null=True, verbose_name="Товар"
     )
-    quantity = models.PositiveSmallIntegerField(default=0, verbose_name="Количество")
+    quantity = models.PositiveSmallIntegerField(default=1, verbose_name="Количество")
     created_time = models.DateTimeField(
         auto_now_add=True, verbose_name="Дата добавления"
     )
