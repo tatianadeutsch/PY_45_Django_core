@@ -28,10 +28,10 @@ urlpatterns = [
     path('productsdelete/<int:pk>/', ProductsAPIDestroy.as_view()),
     # корзина
     path('cart/', CartAPIList.as_view()),
-    path('cart/<int:pk>/', CartAPIList.as_view()),
+    path('cart/<int:pk>/', CartsAPIUpdate.as_view()),
     # поиск товаров по названию search/'search/?name=product_name'
     # сортировка товара по name, price, order и т.д. search/'search/?order_by=price=dbs
     path('search/', ProductsSearchView.as_view(), name='product_search')
-    # path('productslist/', CartsAPIUpdate.as_view({'get': 'list'})),
+    # path('productslist/', ProductsViewSet.as_view({'get': 'list'})),
     # path('productslist/<int:pk>/', ProductsViewSet.as_view({'put': 'update'})),
 ]
